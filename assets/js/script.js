@@ -1,10 +1,11 @@
-
 const navItems = document.querySelectorAll('.cambioClase');
-navItems.forEach(item => item.addEventListener('click', cambiarClase));
+navItems.forEach(item => item.addEventListener('click', () => {
+  cambiarClase(event);
+  clickBtn();
+}));
 
 function cambiarClase(event) {
   const elementoClickeado = event.target;
-
   // Cambiar clases de los elementos de navegación
   navItems.forEach(item => {
     if (item === elementoClickeado) {
@@ -15,6 +16,9 @@ function cambiarClase(event) {
       item.classList.add('text-muted');
     }
   });
+}
+
+function clickBtn() {
   // Obtén el elemento del botón por su ID o alguna otra forma de selección
   const btn = document.getElementById('myButton');
   // Simula un clic en el botón
