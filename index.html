@@ -26,7 +26,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- nav-items -->
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class=" nav-item">
                             <a class="nav-link cambioClase text-white" href="#la_conferencia" id="conferencia">La
@@ -70,7 +70,7 @@
                         otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
                         esperamos!
                     </p>
-                    <a class="btn btn-outline-light mx-1" href="#conviertete_en_orador" id="btnConvierteteOrador">Quiero
+                    <a class="btn btn-outline-light" href="#conviertete_en_orador" id="btnConvierteteOrador">Quiero
                         ser orador</a>
                     <a class="btn btn-success">Comprar tickets</a>
                 </div>
@@ -79,7 +79,7 @@
     </section>
     <!-- main -------------------------------------------------------------------------------------------->
     <section id="los_oradores">
-        <main class="container mt-3">
+        <main class="container">
             <div class="row">
                 <div class="col text-center">
                     <p>CONOCE A LOS</p>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <!-- main cards -->
-            <div class="row g-4 justify-content-center">
+            <div class="row main-body g-4">
                 <!-- card -->
                 <div class="col-sm-12 mb-2 col-md-6 col-lg-4 col-xl-3">
                     <div class="card">
@@ -142,9 +142,9 @@
             <div class="col-sm-12 col-lg-6 g-1">
                 <img src="./assets/img/honolulu.jpg" class="img-fluid" alt="...">
             </div>
-            <div class="col-sm-12 col-lg-6 g-1 p-3" style="background-color: #353A40;">
-                <h2 class="text-white pl-2">Bs As - Octubre</h2>
-                <p class="text-white">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en
+            <div class="col-sm-12 col-lg-6 g-1">
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en
                     los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses.
                     Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la
                     ciudad y el condado de Honolulu han formado una ciudad- condado consolidada que cubre toda la ciudad
@@ -158,16 +158,16 @@
     </section>
     <!-- form -------------------------------------------------------------------------------------------->
     <section id="conviertete_en_orador">
-        <div class="container justify-content-center text-center">
+        <div class="container">
             <span>CONVIÉRTETE EN UN</span>
             <h2>ORADOR</h2>
             <p>
                 Anótate como orador para dar una
-                <span style="text-decoration: underline dotted">charla ignite </span>
+                <a class="underline" href="#">charla ignite</a>
                 . Cuéntanos de qué quieres hablar!
             </p>
         </div>
-        <form class="container row justify-content-center m-auto mt-4">
+        <form class="container row m-auto">
             <div class="col-sm-12 col-lg-10 col-xl-8">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6 mb-3">
@@ -180,21 +180,18 @@
                 </div>
                 <div>
                     <div>
-                        <textarea class="form-control" style="height: 100px; font-size: 20px"
-                            placeholder="Sobre qué quieres hablar?" id="Comments"></textarea>
+                        <textarea class="form-control t-area" placeholder="Sobre qué quieres hablar?" id="Comments"></textarea>
                         <span class="text-secondary">Recuerda incluir un título para tu charla</span>
                     </div>
                 </div>
-                <button type="submit" class="col-12 btn mt-3" style="background-color:#98C83E;">Enviar</button>
+                <button type="submit" class="col-12 btn mt-3 btn-color">Enviar</button>
             </div>
         </form>
     </section>
     <!-- footer ------------------------------------------------------------------------------------------>
     <footer>
-        <div class="container-fluid navbar-expand-lg mt-4 pb-1"
-            style="background: linear-gradient(to right, #1C3643, #1E5372)">
-            <ul class="container navbar justify-content-between 
-                    text-center align-items-center text-white list-unstyled">
+        <div class="container-fluid navbar-expand-lg mt-4 pb-1 footer-style">
+            <ul class="container navbar list-unstyled">
                 <li class="col-12 col-sm-6 col-md-4 col-lg-1 mb-3 mb-sm-4 mb-lg-0"><a class="nav-link"
                         href="#">Preguntas frecuentes</a></li>
                 <li class="col-12 col-sm-6 col-md-4 col-lg-1 mb-3 mb-sm-4 mb-lg-0"><a class="nav-link"

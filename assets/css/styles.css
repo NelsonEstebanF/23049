@@ -8,10 +8,6 @@ body {
     align-content: center;
 }
 
-#navbarNav {
-    justify-content: end;
-}
-
 section {
     padding-top: 80px;
 }
@@ -32,4 +28,55 @@ section {
     justify-content: end;
     align-content: center;
     text-align: end;
+}
+
+#btnConvierteteOrador {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+main {
+    margin-top: 0.75rem;
+}
+
+.main-body {
+    justify-content: center;
+}
+
+#lugar_y_fecha div div:nth-child(2) {
+    background-color: #353A40;
+    color: white;
+    padding: 0.75rem;
+}
+
+#lugar_y_fecha div div:nth-child(2) h2 {
+    padding-left: 0.5rem;
+}
+
+#conviertete_en_orador * {
+    justify-content: center;
+}
+
+#conviertete_en_orador div {
+    text-align: center;
+}
+
+.underline {
+    color: black;
+    text-decoration: underline dotted;
+}
+.t-area{
+    height: 100px; 
+    font-size: 20px;
+}
+.btn-color {
+    background-color: #98C83E;
+}
+
+.footer-style {
+    background: linear-gradient(to right, #1C3643, #1E5372);
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: white;
 }
