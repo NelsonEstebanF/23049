@@ -35,7 +35,9 @@ main div {
 }
 
 .btn-color {
-    background-color: #98C83E;
+    border: 0;
+    width: 48.5%;
+        background-color: #98C83E;
 }
 
 footer {

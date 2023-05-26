@@ -70,6 +70,7 @@ main {
     font-size: 20px;
 }
 .btn-color {
+    border: 0;
     background-color: #98C83E;
 }
 
