@@ -73,7 +73,7 @@ main {
     background-color: #98C83E;
 }
 
-.footer-style {
+footer{
     background: linear-gradient(to right, #1C3643, #1E5372);
     justify-content: space-between;
     text-align: center;
