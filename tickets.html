@@ -55,10 +55,10 @@
     </header>
     <!-- form -------------------------------------------------------------------------------------------->
     <main>
-        <div class="container row m-auto">
+        <div class="container row m-auto text-center">
             <div class="col-sm-12 col-lg-10 col-xl-8">
                 <div class="row">
-                    <div class="col-12 col-sm-4 p-1">
+                    <div class="col-12 col-sm-4">
                         <div class="card border-primary">
                             <div class="card-body">
                                 <h5 class="card-title">Estudiante</h5>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4 p-1">
+                    <div class="col-12 col-sm-4">
                         <div class="card border-success">
                             <div class="card-body">
                                 <h5 class="card-title">Trainee</h5>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-4 p-1">
+                    <div class="col-12 col-sm-4">
                         <div class="card border-warning">
                             <div class="card-body">
                                 <h5 class="card-title">Junior</h5>
@@ -96,36 +96,48 @@
                 </div>
             </div>
         </div>
-
-
-        <form class="container row m-auto">
+        <form class="container row m-auto needs-validation" novalidate>
             <div class="col-sm-12 col-lg-10 col-xl-8">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Nombre" id="name">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Nombre" id="name" required>
+                        <div class="invalid-feedback">
+                            Ingrese su nombre
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Apellido" id="lastname">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Apellido" id="lastname" required>
+                        <div class="invalid-feedback">
+                            Ingrese su apellido
+                        </div>
                     </div>
-                    <div class="col-12 mb-3">
-                        <input type="email" class="form-control" placeholder="Correo" id="email">
+                    <div class="col-12">
+                        <input type="email" class="form-control" placeholder="Correo" id="email" required>
+                        <div class="invalid-feedback">
+                            Ingrese su email
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 mb-3 text-start">
-                        <label class="form-label m-1" for="cantidad">Cantidad</label>
-                        <input type="text" class="form-control" placeholder="cantidad" id="cantidad" name="cantidad">
+                    <div class="col-6">
+                        <label class="form-label" for="cantidad">Cantidad</label>
+                        <input type="text" class="form-control" placeholder="cantidad" id="cantidad" required>
+                        <div class="invalid-feedback">
+                            Ingrese la cantidad
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6 mb-3 text-start">
-                        <label class="form-label m-1" for="categoria">Categoria</label>
-                        <select class="form-select" id="categoria" name="categoria">
+                    <div class="col-6">
+                        <label class="form-label" for="categoria">Categoria</label>
+                        <select class="form-select" id="categoria">
                             <option value="estudiante">Estudiante</option>
                             <option value="trainee">Trainee</option>
                             <option value="junior">Junior</option>
                         </select>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <button type="reset" class="btn btn-success mt-3 btn-color">Borrar</button>
-                    <button type="button" class="btn btn-success mt-3 btn-color">Resumen</button>
+                    <div class="col-6">
+                        <button type="reset" class="col-12 btn btn-success btn-color">Borrar</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="col-12 btn btn-success btn-color">Resumen</button>
+                    </div>
                 </div>
             </div>
         </form>

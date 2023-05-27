@@ -57,10 +57,6 @@ main {
     justify-content: center;
 }
 
-#conviertete_en_orador div {
-    text-align: center;
-}
-
 .underline {
     color: black;
     text-decoration: underline dotted;
