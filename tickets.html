@@ -101,28 +101,16 @@
                 <div class="row g-3">
                     <div class="col-6">
                         <input type="text" class="form-control" placeholder="Nombre" id="name" required>
-                        <div class="invalid-feedback">
-                            Ingrese su nombre
-                        </div>
                     </div>
                     <div class="col-6">
                         <input type="text" class="form-control" placeholder="Apellido" id="lastname" required>
-                        <div class="invalid-feedback">
-                            Ingrese su apellido
-                        </div>
                     </div>
                     <div class="col-12">
                         <input type="email" class="form-control" placeholder="Correo" id="email" required>
-                        <div class="invalid-feedback">
-                            Ingrese su email
-                        </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label" for="cantidad">Cantidad</label>
                         <input type="text" class="form-control" placeholder="cantidad" id="cantidad" required>
-                        <div class="invalid-feedback">
-                            Ingrese la cantidad
-                        </div>
                     </div>
                     <div class="col-6">
                         <label class="form-label" for="categoria">Categoria</label>
@@ -131,6 +119,9 @@
                             <option value="trainee">Trainee</option>
                             <option value="junior">Junior</option>
                         </select>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        <span id="totalAPagar">Total a pagar: $</span>
                     </div>
                     <div class="col-6">
                         <button type="reset" class="col-12 btn btn-success btn-color">Borrar</button>
