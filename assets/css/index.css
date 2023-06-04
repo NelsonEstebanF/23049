@@ -57,10 +57,6 @@ main {
     justify-content: center;
 }
 
-#conviertete_en_orador div {
-    text-align: center;
-}
-
 .underline {
     color: black;
     text-decoration: underline dotted;
@@ -70,10 +66,11 @@ main {
     font-size: 20px;
 }
 .btn-color {
+    border: 0;
     background-color: #98C83E;
 }
 
-.footer-style {
+footer{
     background: linear-gradient(to right, #1C3643, #1E5372);
     justify-content: space-between;
     text-align: center;
