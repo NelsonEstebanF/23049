@@ -96,21 +96,21 @@
                 </div>
             </div>
         </div>
-        <form class="container row m-auto needs-validation" novalidate>
+        <form class="container row m-auto" novalidate>
             <div class="col-sm-12 col-lg-10 col-xl-8">
                 <div class="row g-3">
                     <div class="col-6">
-                        <input type="text" class="form-control" placeholder="Nombre" id="name" required>
+                        <input type="text" class="form-control" placeholder="Nombre" id="name">
                     </div>
                     <div class="col-6">
-                        <input type="text" class="form-control" placeholder="Apellido" id="lastname" required>
+                        <input type="text" class="form-control" placeholder="Apellido" id="lastname">
                     </div>
                     <div class="col-12">
-                        <input type="email" class="form-control" placeholder="Correo" id="email" required>
+                        <input type="email" class="form-control" placeholder="Correo" id="email">
                     </div>
                     <div class="col-6">
                         <label class="form-label" for="cantidad">Cantidad</label>
-                        <input type="text" class="form-control" placeholder="cantidad" id="cantidad" required>
+                        <input type="text" class="form-control" placeholder="cantidad" id="cantidad">
                     </div>
                     <div class="col-6">
                         <label class="form-label" for="categoria">Categoria</label>
@@ -121,13 +121,13 @@
                         </select>
                     </div>
                     <div class="alert alert-primary" role="alert">
-                        <span id="totalAPagar">Total a pagar: $</span>
+                        <span id="total">Total a pagar: $</span>
                     </div>
                     <div class="col-6">
-                        <button type="reset" class="col-12 btn btn-success btn-color">Borrar</button>
+                        <button type="reset" class="col-12 btn btn-success btn-color" id="buttonBorrar">Borrar</button>
                     </div>
                     <div class="col-6">
-                        <button type="submit" class="col-12 btn btn-success btn-color">Resumen</button>
+                        <button type="button" class="col-12 btn btn-success btn-color" id="buttonResumen">Resumen</button>
                     </div>
                 </div>
             </div>
