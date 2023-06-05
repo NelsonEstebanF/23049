@@ -79,11 +79,11 @@ function getDescuento() {
             return 0; // Sin descuento por defecto
     }
 }
+const getCantidad = () => parseInt(inputFields.cantidad.element.value);
 
 function getTotal() {
     const valorBase = 200;
-    const descuento = getDescuento();
-    const total = valorBase * (1 - descuento);
+    const total = (valorBase - (valorBase * getDescuento())) * getCantidad();
     return total.toFixed(2);
 }
 
